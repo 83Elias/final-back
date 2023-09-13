@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "88cacb65-0b1a-4d58-a6f4-970b6d655def",
+		"name": "bills-parcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14081882"
+	},
+	"item": [
+		{
+			"name": "gateway-api (pegar en el navegador)",
+			"item": [
+				{
+					"name": "buscar usuarios por ID con sus facturas",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "obtener facturas",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sin gateway (postman)",
+			"item": [
+				{
+					"name": "generate token",
+					"item": [
+						{
+							"name": "generate token",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:8090/login/oauth2/code/keycloak",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "openid",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "jAzDKi5wy9qYWfRarOGyypa4KbkGy2s0",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "api-gateway-client",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/parcial-back-end/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/parcial-back-end/protocol/openid-connect/auth",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/customer/bills/746c225d-63d6-4440-92d8-5657ea6b287e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"customer",
+										"bills",
+										"746c225d-63d6-4440-92d8-5657ea6b287e"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "buscar usuario y factura",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar factura",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ1M2txOEVIWk5HOWdFLWd3V2pWQ0pETnZ6YlhaU1E4QTloRkdXMjZQYWtNIn0.eyJleHAiOjE2OTQ0OTQ5MzUsImlhdCI6MTY5NDQ5NDYzNSwiYXV0aF90aW1lIjoxNjk0NDk0NjM1LCJqdGkiOiI1YTY1OTYwYi1hZWFhLTQxYmUtYTYwNC0zMzk2MGQ0MmMyNjYiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvcmVhbG1zL3BhcmNpYWwtYmFjay1lbmQiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiMWY4NDFlZWEtZDZlZC00ZTEzLWI5Y2MtNjU1NjljYWIwNzg1IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBpLWdhdGV3YXktY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6ImI0YTE4ZTk0LTZmMjctNGNjYS1iMzdmLWM4ZjU4ZjRlNTY5OCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiIiwiaHR0cDovL2xvY2FsaG9zdDo4MDkwIiwiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsImRlZmF1bHQtcm9sZXMtcGFyY2lhbC1iYWNrLWVuZCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwgcm9sZXMiLCJzaWQiOiJiNGExOGU5NC02ZjI3LTRjY2EtYjM3Zi1jOGY1OGY0ZTU2OTgiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJqaG9uIGRvZSIsImdyb3VwcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1wYXJjaWFsLWJhY2stZW5kIl0sInByZWZlcnJlZF91c2VybmFtZSI6InVzZXJ0ZXN0MiIsImdpdmVuX25hbWUiOiJqaG9uIiwiZmFtaWx5X25hbWUiOiJkb2UiLCJlbWFpbCI6InVzZXJ0ZXN0MkBnbWFpbC5jb20iLCJ1c2VyX2dyb3VwcyI6W119.BiqGBnqyoSzPMs23-OmFlRGliELDrJjT3vnJ_GP8cV07R4KpKMgM7z7dzNtWN3vX9__9us1vw903LhdANS2PYdFLs5UPeKGGnQMfRlSEALhxFCPIspcH53vsHyLjJ7cJcyhj2DEeX7CSzJgaoahSu17D8ie9JHeN7J7wyuMOiSIlDxD_19uYKNTFhJo9LBsWoSzIvRJVftlzr0mhqeptRlRITaoWAJ8xpK3YZl5LtpOSdCdQ8na_9Czl626IHPWbt6Q1pxT82vBp7t8MpbKjM4qAtmxx2sku8RKwarKYjBKxck3ekdGLWwkqNIPXsNU23MH445Juvvzo3VegnCeyrQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:56511/api/v1/bills/4de409d9-eff2-47b9-8bc3-f22a28094ffb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "56511",
+							"path": [
+								"api",
+								"v1",
+								"bills",
+								"4de409d9-eff2-47b9-8bc3-f22a28094ffb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

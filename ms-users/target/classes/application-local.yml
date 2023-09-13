@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ms-users
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 8081
+
+ms:
+  keycloak:
+    serverUrl: http://localhost:8080
+    realm: parcial-back-end
+    clientId: ms-user
+    clientSecret: hOIPchDdv7MiaQfx69I3xtAbRCNDIT5X

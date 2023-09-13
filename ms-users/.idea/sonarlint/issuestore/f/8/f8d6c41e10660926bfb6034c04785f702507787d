@@ -1,0 +1,17 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Æü»ùÿÿÿÿ8şÔ§”¨1
+d
+java:S2094"BRemove this empty class, write its code or make it an "interface".(Ú÷ğåşÿÿÿÿ8ÿÔ§”¨1
+]	java:S125"<This block of commented-out lines of code should be removed.(¶¬Êåûÿÿÿÿ8Õ§”¨1
+W
+java:S1128"5Remove this unused import 'feign.RequestInterceptor'.(–¾òùÿÿÿÿ8‚Õ§”¨1
+T
+java:S1128"2Remove this unused import 'feign.RequestTemplate'.(«ÀßŸşÿÿÿÿ8‚Õ§”¨1
+g
+java:S1128"ERemove this unused import 'org.springframework.stereotype.Component'.(Ş÷Ñ¸ÿÿÿÿÿ8‚Õ§”¨1
+j
+java:S1128"MRemove this unused import 'org.springframework.security.core.Authentication'.(ñıÓ“8‚Õ§”¨1
+y
+java:S1128"\Remove this unused import 'org.springframework.security.core.context.SecurityContextHolder'.(ŒÄæë8‚Õ§”¨1
+“
+java:S1128"vRemove this unused import 'org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken'.(˜Ùò¹8‚Õ§”¨1
