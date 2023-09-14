@@ -20,8 +20,32 @@
 				{
 					"name": "obtener facturas",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ1M2txOEVIWk5HOWdFLWd3V2pWQ0pETnZ6YlhaU1E4QTloRkdXMjZQYWtNIn0.eyJleHAiOjE2OTQ1NjM0MTIsImlhdCI6MTY5NDU2MzExMiwiYXV0aF90aW1lIjoxNjk0NTYyOTExLCJqdGkiOiJhMzRmZTMxZS00MWRiLTQ1NTItODJmNi0yZDI2MjJmYjg1NjAiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvcmVhbG1zL3BhcmNpYWwtYmFjay1lbmQiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNzQ2YzIyNWQtNjNkNi00NDQwLTkyZDgtNTY1N2VhNmIyODdlIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBpLWdhdGV3YXktY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6IjM5OGNlMjkyLTA3Y2UtNDJlNi1hZTM2LWMwYTI1NDVjNWNkNSIsImFjciI6IjAiLCJhbGxvd2VkLW9yaWdpbnMiOlsiIiwiaHR0cDovL2xvY2FsaG9zdDo4MDkwIiwiaHR0cHM6Ly9vYXV0aC5wc3Rtbi5pby92MS9jYWxsYmFjayJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsImRlZmF1bHQtcm9sZXMtcGFyY2lhbC1iYWNrLWVuZCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwgcm9sZXMiLCJzaWQiOiIzOThjZTI5Mi0wN2NlLTQyZTYtYWUzNi1jMGEyNTQ1YzVjZDUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJFbGlhcyBWYXNxdWV6IiwiZ3JvdXBzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJkZWZhdWx0LXJvbGVzLXBhcmNpYWwtYmFjay1lbmQiXSwicHJlZmVycmVkX3VzZXJuYW1lIjoidXNlcnRlc3QxIiwiZ2l2ZW5fbmFtZSI6IkVsaWFzIiwiZmFtaWx5X25hbWUiOiJWYXNxdWV6IiwiZW1haWwiOiJ1c2VydGVzdDFAZ21haWwuY29tIiwidXNlcl9ncm91cHMiOlsiUFJPVklERVJTIl19.MXstDiZK3PAmaJ1AF1ySVG7XAJGlTk10284ut_orr4JLrma72dPcIPjoKRspQB37WGnXjo1xBeIiUrdUj8uQMCekRcejxtkQBOaM6hEZYvFIzfBghKJQWpmHEG5vcPqCzy96WXRw0hUufHU0ECseNCy1Of7p3h46fwhV5nrnQEB_Xbc3hK7mhFhQpzo0XlQ6ZF7CDGqapAVOFSjUSpV_RbZ8Q7DLipmHYr5oG6g5uWQysB0WInlNPw0149bPmR_t7ccnighqFZzpbJpwTJqtEicZpfYqu8EJieSbbC7jzC01gQxwmISA2Cdd_b5bVDVMQlJvPNF8BI9GkTitVk590A",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/v1/bills/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"v1",
+								"bills",
+								"all"
+							]
+						}
 					},
 					"response": []
 				}
@@ -99,8 +123,31 @@
 				{
 					"name": "buscar usuario y factura",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ1M2txOEVIWk5HOWdFLWd3V2pWQ0pETnZ6YlhaU1E4QTloRkdXMjZQYWtNIn0.eyJleHAiOjE2OTQ0OTQ4MjcsImlhdCI6MTY5NDQ5NDUyNywiYXV0aF90aW1lIjoxNjk0NDk0NTI3LCJqdGkiOiI4N2IyZTVhZi1jYmU0LTQyYWItYjcyOC01ZGRmMTVjNmZlNzMiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvcmVhbG1zL3BhcmNpYWwtYmFjay1lbmQiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNzQ2YzIyNWQtNjNkNi00NDQwLTkyZDgtNTY1N2VhNmIyODdlIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBpLWdhdGV3YXktY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6ImI1OGNlOWY3LTNmZjEtNDg2Yi1hMDA1LTA4NTlmZTczZWQ3MyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiIiwiaHR0cDovL2xvY2FsaG9zdDo4MDkwIiwiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsImRlZmF1bHQtcm9sZXMtcGFyY2lhbC1iYWNrLWVuZCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwgcm9sZXMiLCJzaWQiOiJiNThjZTlmNy0zZmYxLTQ4NmItYTAwNS0wODU5ZmU3M2VkNzMiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJFbGlhcyBWYXNxdWV6IiwiZ3JvdXBzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJkZWZhdWx0LXJvbGVzLXBhcmNpYWwtYmFjay1lbmQiXSwicHJlZmVycmVkX3VzZXJuYW1lIjoidXNlcnRlc3QxIiwiZ2l2ZW5fbmFtZSI6IkVsaWFzIiwiZmFtaWx5X25hbWUiOiJWYXNxdWV6IiwiZW1haWwiOiJ1c2VydGVzdDFAZ21haWwuY29tIiwidXNlcl9ncm91cHMiOlsiUFJPVklERVJTIl19.ea4D9EDLVwv5hNx7NBZonAGQCM2Tru1yVX8AcgYrt3AyNQ64nrvnJkMicRc095kAo_lfgc1Te2YX4g9I6F11p3q1rayGzQ6R0TBD6jEgkWYj0GejU6FOOKfta36RPkNMnUbTEWW0UiYN0tK9qwr-TMmJBkcwr80OJLtjrczwICFdHUpMeknFBb1S-lVdVO3f00eu4r03fS8Uq57IC7WSayqLtYdBG7c5-nYKW5knXkARwK5_gkhg1pIUalwP1ejkvCWk1Z56Pjrxcl62jc7mx1vue5K-xPi7HaromnF7oebu09T1v8RK2vFtkxbBan-Ub4b2QV-qjBIyCqRV-jIcNg",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/customer/bills/746c225d-63d6-4440-92d8-5657ea6b287e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"customer",
+								"bills",
+								"746c225d-63d6-4440-92d8-5657ea6b287e"
+							]
+						}
 					},
 					"response": []
 				},
